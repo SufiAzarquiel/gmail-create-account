@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Basic Page Needs
+        <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+        <link
+            href="/fonts/Roboto-Regular.ttf"
+            rel="stylesheet"
+            type="text/css"
+        />
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css" />
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <!-- Page title -->
+        <title>Crea una cuenta de Google</title>
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/barebones.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon-16.png">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="grid-container halves">
-      <div>
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="https://acahir.github.io/Barebones/">Barebones documentation</a>.</p>
-      </div>
-    </div>
-  </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/icon.png" />
+    </head>
+    <body>
+        <div class="container">
+            <div id="principal">
+                <div class="left w-50">
+                    <img src="images/logo.jpg" alt="" />
+                    <h1>Crea una cuenta de Google</h1>
+                    <p>Ir a Gmail</p>
+                    <form action="pagina.php" method="post">
+                        <div class="fila">
+                            <div class="left">
+                                <input type="text" placeholder=" Nombre" />
+                            </div>
+                            <div class="right">
+                                <input type="text" placeholder=" Apellidos" />
+                            </div>
+                            <div class="cb"></div>
+                        </div>
+                        <div class="fila">
+                            <input
+                                type="text"
+                                placeholder=" Nombre de usuario @gmail.com"
+                                id="subdomain"
+                            />
+                            <div class="sublabel">
+                                Puedes utilizar letras, números y puntos
+                            </div>
+                        </div>
+                        <div class="fila">
+                            <div class="left">
+                                <input type="text" placeholder=" Contraseña" />
+                            </div>
+                            <div class="right">
+                                <input
+                                    type="text"
+                                    placeholder=" Confirmación"
+                                />
+                            </div>
+                            <div class="cb"></div>
+                            <div class="sublabel">
+                                Utiliza ocho caracteres como mínimo con una
+                                combinación de letras, números y símbolos
+                            </div>
+                            <input
+                                type="checkbox"
+                                name="Mostrar contraseña"
+                                id=""
+                                value=""
+                            />
+                            Mostrar contraseña
+                        </div>
+                    </form>
+                </div>
+                <div class="right py-100 w-40">
+                    <img src="images/gmail.jpg" alt="" />
+                    <p>Una cuenta. Todo Google a tu disposición.</p>
+                </div>
+                <div class="cb"></div>
+            </div>
+        </div>
+        <footer class="container">FOOTER</footer>
+    </body>
+    <!-- End Document -->
 </html>
