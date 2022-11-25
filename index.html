@@ -30,48 +30,61 @@
                     <h1>Crea una cuenta de Google</h1>
                     <p>Ir a Gmail</p>
                     <form action="pagina.php" method="post">
-                        <div class="fila">
-                            <div class="left">
-                                <input type="text" placeholder=" Nombre" />
-                            </div>
-                            <div class="right">
-                                <input type="text" placeholder=" Apellidos" />
-                            </div>
-                            <div class="cb"></div>
-                        </div>
-                        <div class="fila">
-                            <input
-                                type="text"
-                                placeholder=" Nombre de usuario @gmail.com"
-                                id="subdomain"
-                            />
-                            <div class="sublabel">
-                                Puedes utilizar letras, números y puntos
-                            </div>
-                        </div>
-                        <div class="fila">
-                            <div class="left">
-                                <input type="text" placeholder=" Contraseña" />
-                            </div>
-                            <div class="right">
+                        <form
+                            action="pagina.php?var=barra"
+                            method="get"
+                            class="registro"
+                        >
+                            <p>
                                 <input
                                     type="text"
-                                    placeholder=" Confirmación"
+                                    name="user"
+                                    placeholder="Nombre"
+                                />
+                                <input
+                                    type="text"
+                                    name="user"
+                                    placeholder="apellidos"
+                                />
+                            </p>
+                            <div class="form-text">
+                                <label for="correo" class="static-value"
+                                    >@gmail.com</label
+                                >
+                                <input
+                                    type="text"
+                                    placeholder="Nombre de usuario"
+                                    id="correo"
                                 />
                             </div>
-                            <div class="cb"></div>
-                            <div class="sublabel">
-                                Utiliza ocho caracteres como mínimo con una
-                                combinación de letras, números y símbolos
-                            </div>
-                            <input
-                                type="checkbox"
-                                name="Mostrar contraseña"
-                                id=""
-                                value=""
-                            />
-                            Mostrar contraseña
-                        </div>
+                            <p>
+                                <input
+                                    type="password"
+                                    name="passwrd"
+                                    placeholder="Contraseña"
+                                />
+                                <input
+                                    type="password"
+                                    name="passwrd2"
+                                    placeholder="Confirmación"
+                                />
+                            </p>
+                            <p>
+                                <input
+                                    type="checkbox"
+                                    name="Mostrar contraseña"
+                                    id=""
+                                    value=""
+                                />
+                            </p>
+                            <p>
+                                <input
+                                    type="submit"
+                                    value="Prefiero iniciar sesión"
+                                />
+                                <input type="submit" value="Siguiente" />
+                            </p>
+                        </form>
                     </form>
                 </div>
                 <div class="right py-100 w-40">
