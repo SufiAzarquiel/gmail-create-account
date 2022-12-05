@@ -4,11 +4,7 @@
 }
 
 .w-50 {
-    width: 55%;
-}
-
-.w-40 {
-    width: 40%;
+    width: 49%;
 }
 
 * {
@@ -24,40 +20,41 @@ a {
 
 body {
     margin: 0;
-    padding: 0;
 }
 
 .container {
     width: 60%;
-    margin: 0 auto;
-}
-
-#principal {
-    border: solid 1px lightgray;
-    border-radius: 10px;
+    margin: 40px auto 10px auto;
     padding: 40px;
-    margin-top: 100px;
-    margin-bottom: 40px;
+    border: solid 1px gainsboro;
+    border-radius: 10px;
 }
 
 .left {
     float: left;
+    width: 55%;
 }
 
 .right {
     float: right;
+    width: 45%;
+    text-align: center;
+    padding: 120px 40px;
 }
 
 .cb {
     clear: both;
 }
 
+.right h3 {
+    font-weight: normal;
+}
+
 h1 {
     font-weight: normal;
 }
 
-form input {
-    width: 100%;
+.left input {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 15px;
@@ -65,14 +62,76 @@ form input {
     border-radius: 5px;
 }
 
-.form-text {
-    position: relative;
+#correo {
+    width: 100%;
 }
 
-.static-value {
-    position: absolute;
-    right: 10px;
-    font-weight: bold;
-    color: #444;
-    top: 25%;
+input[name="mostrar"] {
+    margin-right: 15px;
+}
+
+.enlace {
+    width: 50%;
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boton {
+    width: 30%;
+    float: right;
+}
+
+.enlace input, .boton input {
+    width: 98%;
+}
+
+a {
+    text-decoration: none;
+}
+
+form a {
+    color: #4c72c2;
+}
+
+footer a {
+    color: gray;
+}
+
+input[value="Siguiente"] {
+    background-color: #4588f1;
+    color: white;
+    border: none;
+}
+
+.idiomas {
+    float: left;
+    width: 30%;
+}
+
+.idiomas form select {
+    border: none;
+}
+
+footer nav {
+    width: 70%;
+    float: right;
+    text-align: right;
+}
+
+footer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+footer nav ul, footer nav li {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 40px;
 }

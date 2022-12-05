@@ -24,77 +24,90 @@
     </head>
     <body>
         <div class="container">
-            <div id="principal">
-                <div class="left w-50">
-                    <img src="images/logo.jpg" alt="" />
-                    <h1>Crea una cuenta de Google</h1>
-                    <p>Ir a Gmail</p>
-                    <form action="pagina.php" method="post">
-                        <form
-                            action="pagina.php?var=barra"
-                            method="get"
-                            class="registro"
-                        >
-                            <p>
-                                <input
-                                    type="text"
-                                    name="user"
-                                    placeholder="Nombre"
-                                />
-                                <input
-                                    type="text"
-                                    name="user"
-                                    placeholder="apellidos"
-                                />
-                            </p>
-                            <div class="form-text">
-                                <label for="correo" class="static-value"
-                                    >@gmail.com</label
-                                >
-                                <input
-                                    type="text"
-                                    placeholder="Nombre de usuario"
-                                    id="correo"
-                                />
-                            </div>
-                            <p>
-                                <input
-                                    type="password"
-                                    name="passwrd"
-                                    placeholder="Contraseña"
-                                />
-                                <input
-                                    type="password"
-                                    name="passwrd2"
-                                    placeholder="Confirmación"
-                                />
-                            </p>
-                            <p>
-                                <input
-                                    type="checkbox"
-                                    name="Mostrar contraseña"
-                                    id=""
-                                    value=""
-                                />
-                            </p>
-                            <p>
-                                <input
-                                    type="submit"
-                                    value="Prefiero iniciar sesión"
-                                />
-                                <input type="submit" value="Siguiente" />
-                            </p>
-                        </form>
-                    </form>
-                </div>
-                <div class="right py-100 w-40">
-                    <img src="images/gmail.jpg" alt="" />
-                    <p>Una cuenta. Todo Google a tu disposición.</p>
-                </div>
-                <div class="cb"></div>
+            <div class="left">
+                <img src="images/logo.jpg" alt="" />
+                <h1>Crea una cuenta de Google</h1>
+                <p>Ir a Gmail</p>
+                <form action="pagina.php" method="post">
+                    <p>
+                        <input
+                            type="text"
+                            name="nombre"
+                            placeholder="Nombre"
+                            class="w-50"
+                        />
+                        <input
+                            type="text"
+                            name="apellidos"
+                            placeholder="Apellidos"
+                            class="w-50"
+                        />
+                    </p>
+                    <p>
+                        <input
+                            type="text"
+                            name="user"
+                            placeholder="Nombre de usuario @gmail.com"
+                            id="correo"
+                        />Puedes utilizar letras, números y puntos.
+                    </p>
+                    <p>
+                        <input
+                            type="password"
+                            name="pass"
+                            placeholder="Contraseña"
+                            class="w-50"
+                        />
+                        <input
+                            type="password"
+                            name="passbis"
+                            placeholder="Confirmación"
+                            class="w-50"
+                        />Utiliza ocho caracteres como mínimo con una combinacón
+                        de letras, números y simbolos.
+                    </p>
+
+                    <input
+                        type="checkbox"
+                        name="mostrar"
+                        id="mostrar"
+                        value=""
+                    />Mostrar contraseña <br>
+                    <div class="enlace">
+                        <a href="#">Prefiero iniciar sesión.</a>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" value="Siguiente"/>
+                    </div>
+                    <div class="cb"></div>
+                </form>
             </div>
+            <div class="right">
+                <img src="images/gmail.jpg" alt="" />
+                <h3>Una cuenta. Todo Google a tu disposición.</h3>
+            </div>
+            <div class="cb"></div>
         </div>
-        <footer class="container">FOOTER</footer>
+        <footer>
+            <div class="idiomas">
+                <form action="#" method="post">
+                    <select name="idioma" id="">
+                        <option value="1">Español (España)</option>
+                        <option value="1">Español (España)</option>
+                        <option value="1">Español (España)</option>
+                        <option value="1">Español (España)</option>
+                    </select>
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Ayuda</a></li>
+                    <li><a href="">Privacidad</a></li>
+                    <li><a href="">Términos</a></li>
+                </ul>
+            </nav>
+            <div class="cb"></div>
+        </footer>
     </body>
     <!-- End Document -->
 </html>
